@@ -20,6 +20,7 @@ This is a short homework, which was given to me as part of an interview process.
 -----
 
 ## Installation
+  Deployment can be found here: https://zuzanaelt.github.io/form-for-fp/
   After opening the page, one needs to fill in the details. Information is checked for correct input.
 
 

@@ -1,5 +1,4 @@
 const button = document.getElementById("button");
-const applicationForm = document.getElementById("application-form");
 const firstName = document.getElementById("first-name");
 const surname = document.getElementById("surname");
 const email = document.getElementById("email");
@@ -18,7 +17,7 @@ button.addEventListener("mouseout", function changeColor(){
 
 button.addEventListener("click",function(e){
     
-    if(surname.value !== "" && email.value !== "" && linkedin.value !=="" && textarea1.value !==""  && textarea2.value !==""){
+    if(surname.value !== "" && email.value !== ""  && textarea1.value !==""  && textarea2.value !==""){
         alert(
 `${firstName.value}, thank you for submitting your Application!
         
