@@ -1,42 +1,40 @@
 const button = document.getElementById("button");
-const applicationForm = document.getElementById("application-form")
-const firstName = document.getElementById("first-name")
-const surname = document.getElementById("surname")
-const email = document.getElementById("email")
-const linkedin = document.getElementById("linkedin")
+const applicationForm = document.getElementById("application-form");
+const firstName = document.getElementById("first-name");
+const surname = document.getElementById("surname");
+const email = document.getElementById("email");
+const linkedin = document.getElementById("linkedin");
 
 
 button.addEventListener("mouseover", function changeColor(){
     button.style.backgroundColor="orange";
+    button.style.color="black";
 });
 
 button.addEventListener("mouseout", function changeColor(){
-    button.style.backgroundColor="blue";
+    button.style.backgroundColor="rgb(43, 43, 142)";
+    button.style.color="white";
 });
-
-
 
 button.addEventListener("click",function(e){
     
     if(surname.value !== "" && email.value !== "" && linkedin.value !=="" && textarea1.value !==""  && textarea2.value !==""){
-        alert(`${firstName.value}, thank you for submitting your Application!
+        alert(
+`${firstName.value}, thank you for submitting your Application!
         
-        You are submitting the following information:
-        Name: ${firstName.value} ${surname.value}
-        Your email: ${email.value}
-        Your LinkedIn: ${linkedin.value}
+    You are submitting the following information:
+    Name: ${firstName.value} ${surname.value}
+    Your email: ${email.value}
+    Your LinkedIn: ${linkedin.value}
+    Your reason to join: ${textarea1.value}    
+    Why are you the best candidate: ${textarea2.value}
 
-        Your reason to join: ${textarea1.value}
-
-        Why are you the best: ${textarea2.value}
-
+We will be in touch soon.
         `);
     }else {
-        alert( "Please fill in the missing details")
+        alert( "Please fill in the missing details.")
     }
 }
-)
-
-;
+);
 
 

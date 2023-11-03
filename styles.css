@@ -14,14 +14,23 @@ body{
     color:rgb(8, 8, 8);
  }
 
- .button{
-    text-align: center;
+ .first, .second{
+    width:46%;
+}
+
+.name-section{
+    display:flex;
+    justify-content:space-between;
+}
+
+ .button{ 
     background-color: rgb(43, 43, 142);
     color:white;
     height: 30px;    
     border-radius: 3px;
     font-weight: bold;
-    Width:90%;
+    Width:100%;
+    margin-left: 6px;
  }
 
 label{
@@ -47,11 +56,4 @@ textarea{
     padding:8px ;
 }
 
-.first, .second{
-    width:46%;
-}
 
-.name-section{
-    display:flex;
-    justify-content:space-between;
-}
