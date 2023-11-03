@@ -1,8 +1,9 @@
 const button = document.getElementById("button");
-const applicationForm = document.getElementById("applicationForm")
-const firstName = document.getElementById("firstName")
+const applicationForm = document.getElementById("application-form")
+const firstName = document.getElementById("first-name")
 const surname = document.getElementById("surname")
 const email = document.getElementById("email")
+const linkedin = document.getElementById("linkedin")
 
 
 button.addEventListener("mouseover", function changeColor(){
@@ -16,11 +17,22 @@ button.addEventListener("mouseout", function changeColor(){
 
 
 button.addEventListener("click",function(e){
-       //stops deleting the form details after click
-    //    e.preventDefault()
     
-    if(surname.value !== "" && email.value !== "" && linkedin.value !=="" ){
-        alert('Thank you for submitting your Application')
+    if(surname.value !== "" && email.value !== "" && linkedin.value !=="" && textarea1.value !==""  && textarea2.value !==""){
+        alert(`${firstName.value}, thank you for submitting your Application!
+        
+        You are submitting the following information:
+        Name: ${firstName.value} ${surname.value}
+        Your email: ${email.value}
+        Your LinkedIn: ${linkedin.value}
+
+        Your reason to join: ${textarea1.value}
+
+        Why are you the best: ${textarea2.value}
+
+        `);
+    }else {
+        alert( "Please fill in the missing details")
     }
 }
 )
